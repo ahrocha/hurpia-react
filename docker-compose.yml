@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+
+  hurpia-react:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: hurpia-react
+    hostname: hurpia-react
+    environment:
+      expose: 3000
+    restart: unless-stopped
