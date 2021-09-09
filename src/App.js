@@ -31,9 +31,9 @@ function App() {
 
         <div className="contents">
           <Switch>
-            <Route path="/" component={Posts} />
             <Route path="/posts" component={Posts} />
             <Route path="/post/:id" component={Post} />
+            <Route path="/" component={Posts} />
           </Switch>
         </div>
 
