@@ -38,7 +38,7 @@ class Posts extends Component {
             const items = this.state.Posts;
             const postsList = items.map( (item, i) => (
                 <li key={item.ID}>
-                    <Link to={"/post/" + item.post_name} >
+                    <Link to={"/post/" + item.post_name} className={"btn btn-primary"} >
                     {item.post_title}
                     </Link>
                 </li>
