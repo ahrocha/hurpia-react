@@ -31,7 +31,7 @@ class Posts extends Component {
         if (loading === true) {
             return (
             <div id="posts">
-                <h2>My name is {this.state.title} and my fullname is {this.state.title} {this.state.text}</h2>
+                <h2>Carregando</h2>
             </div>
             );
         } else {
@@ -46,7 +46,9 @@ class Posts extends Component {
             );
             return (
             <div id="postsList">
-                {postsList}
+                <ul className="list-unstyled">
+                    {postsList}
+                </ul>
             </div>
             );
         }

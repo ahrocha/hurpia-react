@@ -24,13 +24,11 @@ class Post extends Component {
     }
 
     render() {
-        console.log("render");
-        console.log(this);
         const loading = this.state.loading;
         if (loading === true) {
             return (
             <div id="posts">
-                <h2>My name is {this.state.title} and my fullname is {this.state.title} {this.state.text}</h2>
+                <h2>Carregando</h2>
             </div>
             );
         } else {
