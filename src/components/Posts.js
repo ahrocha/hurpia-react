@@ -10,7 +10,6 @@ import {
 class Posts extends Component {
 
     constructor() {
-        console.log("post constructor");
         super();
         this.state = {Posts: [], loading: true, title: "Andrey", text: "Hurpia da Rocha"};
     }
