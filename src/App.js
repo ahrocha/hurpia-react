@@ -20,7 +20,7 @@ function App() {
     <div>
         <MainMenu />
         <div id="main" className="container">
-          <div class="row">
+          <div className="row">
           <div className="col-12 col-md-12"></div>
           </div>
           <div class="row">

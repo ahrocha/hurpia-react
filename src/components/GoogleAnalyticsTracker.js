@@ -7,9 +7,9 @@ const GoogleAnalyticsTracker = () => {
     const [initialized, setInitialized] = useState(false);
 
     useEffect(() => {
-        ReactGA.initialize("UA-1285816-7");
+        ReactGA.initialize("UA-1285816-28");
         if (!window.location.href.includes("localhost")) {
-            ReactGA.initialize("UA-1285816-7");
+            ReactGA.initialize("UA-1285816-28");
         }
         setInitialized(true);
     }, []);
