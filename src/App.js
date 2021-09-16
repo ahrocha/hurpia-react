@@ -8,8 +8,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+import GoogleAnalyticsTracker from './components/GoogleAnalyticsTracker';
+
 //import {Route, Switch,Redirect, Link, withRouter} from 'react-router-dom';
 function App() {
+
+  GoogleAnalyticsTracker();
+
   return (
     <div>
         <MainMenu />
