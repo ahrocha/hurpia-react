@@ -27,7 +27,7 @@ class Post extends Component {
             );
         } else {
             const item = this.state.Post;
-            let post_content = item.post_content.replace(/\n/g, "<br />");
+            let post_content = item.post_content;
             const postsList = (
                 <div>
                     <h2>{item.post_title}</h2>
