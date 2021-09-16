@@ -11,3 +11,14 @@ services:
     environment:
       expose: 3000
     restart: unless-stopped
+    networks:
+      default:
+        ipv4_address: 172.25.0.11
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.25.0.0/24
